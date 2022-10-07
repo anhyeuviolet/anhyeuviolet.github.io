@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
+
+@font-face {
+  font-family: "Material Symbols Outlined";
+  font-style: normal;
+  font-weight: 300 700;
+  src: url(https://fonts.gstatic.com/s/materialsymbolsoutlined/v52/kJEhBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oFsI.woff2)
+    format("woff2");
+}
+
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+}
+.clear {
+  clear: both;
+}
+.reset-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  color: var(--color-font);
+}
+img,
+video,
+iframe {
+  max-width: 100%;
+}
+svg {
+  width: 20px;
+  height: 20px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ----------------------------- */
+:root {
+  --color-primary: #1f4963;
+  --color-pri-dark: #002239;
+  --color-secondary: #4e7491;
+  --color-sec-dark: #1f4963;
+  --blue-gray: #eceff1;
+  --color-font: #797979;
+  --amber: #ffca28;
+}
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+.bar1,
+.bar2,
+.bar3 {
+  width: 25px;
+  height: 2px;
+  border-radius: 5px;
+  background-color: var(--color-primary);
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 7px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -7px) rotate(45deg);
+}
+
+.material-symbols-outlined {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 35px;
+  color: var(--color-primary);
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px 0 15px;
+  position: relative;
+  height: 70px;
+}
+.icon-logo img {
+  display: flex;
+  max-height: 20px;
+  float: left;
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navbar-link ul {
+  display: none;
+  list-style-type: none;
+}
+
+.nav-toggle {
+  display: flex;
+  float: left;
+}
+.nav-right {
+  display: flex;
+}
+.search {
+  float: left;
+  padding-right: 10px;
+  position: relative;
+}
+.cart {
+  float: left;
+  position: relative;
+}
+.count-holder {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  background: var(--amber);
+  color: var(--color-pri-dark);
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  line-height: 16px;
+}
+/* banner */
+
+.banner_truot .b1 {
+  background-image: url(/images/banner/banner.jpg);
+}
+.banner_truot .b2 {
+  background-image: url(/images/banner/main1.jpg);
+}
+.banner_truot .b3 {
+  background-image: url(/images/banner/main2.jpg);
+}
+.banner_truot .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .swiper-pagination {
+  position: absolute;
+  padding: 0 0 70px 0;
+}
+.banner .swiper-pagination-bullet-active {
+  background-color: var(--color-primary);
+}
+
+.banner .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #bbb;
+}
+.banner .swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+/* -------------------- */
+.title {
+  text-transform: uppercase;
+  font-family: "Playfair", Display;
+  font-weight: 500;
+  font-size: 2rem;
+  color: var(--color-primary);
+  text-align: center;
+}
+.tus{
+  padding: 20px 0 20px 0;
+}
+.tus p {
+  font-size: 1.6rem;
+  line-height: 140%;
+  padding: 0 30px;
+  text-align: center;
+  font-weight: 300;
+}
+ 
+.product-header {
+  position: relative;
+  padding: 20px 10px;
+}
+.product-header::after{
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  top: 50%;
+  right: 5%;
+  background-color: var(--color-primary);
+  }
+  .product-header::before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    top: 50%;
+   left: 5%;
+    background-color: var(--color-primary);
+    }
+.product-name {
+  text-transform: capitalize;
+  font-family: "Playfair", Display;
+  font-size: 1.7rem;
+  color: var(--color-font);
+  text-align: center;
+  height: auto;
+  position: relative;
+}
+.product-name::after{
+  content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  background-color:var(--color-font);
+}
+.product-price {
+  color: var(--color-secondary);
+  font-weight: 500;
+  font-size: 1.7rem;
+  text-align: center;
+  padding: 5px 0;
+}
+.all-product ul li{
+  list-style-type: none;
+  display: inline;
+  margin: 0 10px 0 10px;
+  font-size: 1.6rem ;
+  padding: 0;
+  font-weight: 300;
+}
+ul.shop-nav{padding: 0 20px 0 20px;text-align: center;}
+.shop-nav >li{width: 100px;}
+.shop-nav{
+  display: flex;
+  width: max-content;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.all-product .active {
+  bottom: 0;
+  right: 0;
+  color: var(--color-primary);
+  font-weight: 500;
+  position: relative;
+  height: 25;
+}
+.all-product .active::after{
+  content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+   top: 24px;
+  background-color:var(--color-font);
+}
+.img-fot{
+  width: auto;height: 250px;
+}
+.img-size{width: auto;height: 250px;}
+.o-fit{object-fit: cover;}
+.o-pos{object-position: left top;}
+.title-info {
+  font-family: "Playfair", Display;
+  font-weight: 500;
+  font-size: 2.3rem;
+  text-align: center;
+  padding: 0 40px;
+}
+.til
+
+/* pc */
+@media screen and (min-width: 1024px) {
+  .title {
+    font-size: 3rem;
+  }
+  .icon-logo img {
+    left: 12%;
+    max-height: 25px;
+  }
+  .nav-bar {
+    padding: 0 50px 0 50px;
+  }
+}
+/* ipad */
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 3rem;
+  } 
+  .icon-logo img {
+    left: 22%;
+    max-height: 25px;
+  }
+  .nav-bar {
+    padding: 15px 50px 15px 50px;
+  }
+  .product-header::after{
+    right: 20%;
+  }
+  .product-header::before{
+  left: 20%;
+  }
+  .tus p {
+    font-size: 2.6rem;
+}
+}
