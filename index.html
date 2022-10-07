@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
   <html lang="en">
     <head>
       <meta charset="UTF-8" />
@@ -7,6 +7,7 @@
       <title>Nicolas</title>
       <link rel="icon" type="image/icon" href="/icons/favicon.svg" />
 	<link rel="stylesheet" href="/css/styles-swiperjs.css">
+	<link rel="stylesheet" href="/css/splide.min.css">
 	<link rel="stylesheet" href="/css/styleNi.css" />
     </head>
     <body>
@@ -36,51 +37,17 @@
             </a>
           </div>
         </div>
-
-        <!-- <div class="navbar-link">
-           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <ul>
-            <li class="Product">Sản phẩm</li>
-            <ul>
-              <li>Sofa</li>
-              <li>Ghế</li>
-              <li>Bàn</li>
-              <li>Giường</li>
-              <li>Trang trí</li>
-            </ul>
-            <li class="Collection">Căn phòng lý tưởng</li>
-            <ul>
-              <li>Phòng khách</li>
-              <li>Phòng ăn</li>
-              <li>Phòng ngủ</li>
-              <li>Phòng làm việc</li>
-            </ul>
-            <li class="Aboutus">Nicolas</li>
-            <ul>
-              <li>Về chúng tôi</li>
-              <li>Blog</li>
-            </ul>
-            <li class="Helps">Hỗ trợ khách hàng</li>
-            <ul>
-              <li>Chính sách giao hàng</li>
-              <li>Chính sách bảo hành</li>
-              <li>Phương thức thanh toán</li>
-              <li>Chính sách đổi trả</li>
-            </ul>
-          </ul>
-        </div> -->
       </nav>
       <div class="clear"></div>
-      <div class="banner">
-        <div class="swiper banner_truot">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide b1"></div>
-            <div class="swiper-slide b2"></div>
-            <div class="swiper-slide b3"></div>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
+		<section class="splide" id="splide-banner" aria-label="Main products Banner">
+		  <div class="splide__track">
+				<ul class="splide__list">
+					<li class="splide__slide b1"><img src="/images/banner/banner.jpg" alt="Slide 01"/></li>
+					<li class="splide__slide b2"><img src="/images/banner/main1.jpg" alt="Slide 02"/></li>
+					<li class="splide__slide b3"><img src="/images/banner/main2.jpg" alt="Slide 03"/></li>
+				</ul>
+		  </div>
+		</section>		  
       <div class="clear"></div>
       <div class="tus">
         <h1 class="title">đứng đầu về chất lượng</h1>
@@ -94,7 +61,7 @@
                       <div class="swiper-wrapper">
                         <div class="swiper-slide product1">
                           <div class="product-img">
-                            <img src="/images/chair/sku1284/image54873.webp" alt="">
+                            <img src="/images/chair/sku1284/image54873.webp" alt=""/>
                           </div>
                           <div class="product-line"></div>
                           <div class="product-name">
@@ -104,7 +71,7 @@
                         </div>
                         <div class="swiper-slide product2">
                           <div class="product-img">
-                            <img src="/images/table/sku45a/image43849.webp" alt="">
+                            <img src="/images/table/sku45a/image43849.webp" alt=""/>
                           </div>
                           <div class="product-line"></div>
                           <div class="product-name">
@@ -114,7 +81,7 @@
                         </div>
                         <div class="swiper-slide product3">
                           <div class="product-img">
-                            <img src="/images/decor/sku16813/image71739.webp" alt="">
+                            <img src="/images/decor/sku16813/image71739.webp" alt=""/>
                           </div>
                           <div class="product-line"></div>
                           <div class="product-name">
@@ -129,7 +96,7 @@
         
         </div>
         <div class="all-product">
-         <h1 class="title"> Tất cả sản phẩm</h1>
+         <h2 class="title"> Tất cả sản phẩm</h2>
           <ul class="shop-nav">
             <li class="active">Sofa</li>
             <li>Ghế</li>
@@ -142,7 +109,7 @@
           </div>
         </div>
         <div class="all-product">
-          <h1 class="title">Căn phòng lý tưởng</h1>
+          <h3 class="title">Căn phòng lý tưởng</h3>
           <ul class="shop-nav">
             <li class="active">Phòng khách</li>
             <li>Phòng ăn</li>
@@ -154,12 +121,12 @@
           </div>
         </div>
         <div class="tus">
-          <h1 class="title">Chúng tôi chuyên nghiệp</h1>
+          <h3 class="title">Chúng tôi chuyên nghiệp</h3>
           <p> Với sự nhấn mạnh vào thiết kế cao cấp, vật liệu và kỹ thuật thủ công, đồ nội thất Nicolas thanh lịch, bền lâu và đặc biệt.</p>
           <img class="img-size o-fit o-pos" src="/images/banner/image75952.jpg" alt="">
         </div>
         <div class="tus-info">
-          <h2 class="title-info">Sản phẩm mới - Gửi thẳng đến hộp thư của bạn.</h2>
+          <h3 class="title-info">Sản phẩm mới - Gửi thẳng đến hộp thư của bạn.</h3>
           <p>Mời bạn đăng nhập ngay để tận hưởng ưu đãi nhé.</p>
           <form class="e-info">
             <input type="email" placeholder="Nhập mail của bạn" class="input-mail">
@@ -171,21 +138,18 @@
 
       <!-- Script -->
      
-      <script src="/js/swiper-bundle.min.js"></script>
-      <script>
-        var swiper = new Swiper(".banner_truot", {
-          spaceBetween: 30,
-          centeredSlides: true,
-          autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-        });
-      </script>
+		<script src="/js/swiper-bundle.min.js"></script>
+		<script src="/js/splide.min.js"></script>
+		<script>
+		  document.addEventListener( 'DOMContentLoaded', function() {
+			var splide = new Splide( '.splide', {
+				  type   : 'loop',
+				  arrows: false,
+				  perPage: 1,
+				} );
+			splide.mount();
+		  } );
+		</script>
       <script>
         var swiper = new Swiper(".next-sp", {
           slidesPerView: 2,

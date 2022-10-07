@@ -142,13 +142,13 @@ a {
 }
 /* banner */
 
-.banner_truot .b1 {
+.splide__slide .b1 {
   background-image: url(/images/banner/banner.jpg);
 }
-.banner_truot .b2 {
+.splide__slide .b2 {
   background-image: url(/images/banner/main1.jpg);
 }
-.banner_truot .b3 {
+.splide__slide .b3 {
   background-image: url(/images/banner/main2.jpg);
 }
 .banner_truot .swiper-slide {
@@ -359,4 +359,7 @@ ul.shop-nav{padding: 0 20px 0 20px;text-align: center;}
 }
 .product-name{
 	padding: 7px;
+}
+.tus, .tus-info{
+	text-align:center;
 }
