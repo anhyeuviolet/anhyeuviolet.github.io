@@ -64,8 +64,8 @@ body{
   --amber: #ffca28;
 }
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 0px;
+  padding-left: 0px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -335,8 +335,14 @@ body{
   height: 70px;
 }
 .icon-logo img {
-
-}
+	display: flex;
+	max-height: 20px;
+	float: left;
+	position: absolute;
+	left: 30%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}}
 
 .navbar-link ul {
   display: none;
@@ -508,14 +514,12 @@ ul.shop-nav {
 .all-product .shop-nav {
   display: flex;
   width: max-content;
-  overflow: scroll;
   position: relative;
   align-items: center;
   margin-bottom: 20px;
 }
 .all-product {
   padding: 20px 0;
-  overflow: hidden;
   position: relative;
   text-align: center;
 }
@@ -674,4 +678,25 @@ button {
 }
 .swiper-button-next:after, .swiper-button-prev:after{
   line-height:2;
+}
+
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.all-product .shop-nav::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.all-product .shop-nav {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
