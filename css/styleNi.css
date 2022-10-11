@@ -335,13 +335,7 @@ body{
   height: 70px;
 }
 .icon-logo img {
-  display: flex;
-  max-height: 20px;
-  float: left;
-  position: absolute;
-  left: 30%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+
 }
 
 .navbar-link ul {
