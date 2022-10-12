@@ -222,17 +222,17 @@ ul.shop-nav {
   background-color: #fff;
   color: var(--color-primary);
 }
+.all-product {
+	padding: 5px 0;
+	position: relative;
+	text-align: center;
+}
 .all-product .shop-nav {
   display: flex;
   width: max-content;
   position: relative;
   align-items: center;
   margin-bottom: 20px;
-}
-.all-product {
-  padding: 20px 0;
-  position: relative;
-  text-align: center;
 }
 
 .all-product ul li {
