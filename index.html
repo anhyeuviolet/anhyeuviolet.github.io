@@ -7,9 +7,10 @@
     <title>Nicolas</title>
     <link rel="icon" type="image/icon" href="/icons/favicon.svg" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <link rel="stylesheet" href="/css/styles-swiperjs.css">
-    <link rel="stylesheet" href="/css/splide.min.css">
-    <link rel="stylesheet" href="/css/styleNi.css" />
+    <link rel="stylesheet" href="/css/styles-swiperjs.css"/>
+    <link rel="stylesheet" href="/css/splide.min.css"/>
+    <link rel="stylesheet" href="/css/style.core.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
   </head>
   <body>
 	<div class="container">
@@ -22,7 +23,7 @@
 			</div>
 			<div class="icon-logo">
 			  <a href="/">
-				<img src="/icons/logo.svg" alt="Nicolas"/>
+				<img class="img-responsive"src="/icons/logo.svg" alt="Nicolas"/>
 			  </a>
 			</div>
 		  </a>
@@ -47,53 +48,53 @@
 		</nav>
 	</div>
 	
-    <div class="clear"></div>
+    <div class="clearfix"></div>
 	<div class="container">
 		<section class="splide" id="splide-banner" aria-label="Main products Banner">
 		  <div class="splide__track">
 			<ul class="splide__list">
 			  <li class="splide__slide b1">
-				<img src="/images/banner/main2.jpg" alt="Slide 01" />
+				<img class="img-responsive"src="/images/banner/main2.jpg" alt="Slide 01" />
 			  </li>
 			  <li class="splide__slide b2">
-				<img src="/images/banner/main1.jpg" alt="Slide 02" />
+				<img class="img-responsive"src="/images/banner/main1.jpg" alt="Slide 02" />
 			  </li>
 			  <li class="splide__slide b3">
-				<img src="/images/banner/main3.jpg" alt="Slide 03" />
+				<img class="img-responsive"src="/images/banner/main3.jpg" alt="Slide 03" />
 			  </li>
 			</ul>
 		  </div>
 		</section>
 	</div>
-    <div class="clear"></div>
+    <div class="clearfix"></div>
     <div class="container">
       <div class="tus">
         <h1 class="title">đứng đầu về chất lượng</h1>
         <p> Là một xưởng nội thất cao cấp sản xuất những tác phẩm độc đáo cho nội thất và các nhà thiết kế trên toàn cầu.</p>
       </div>
-      <div class="clear"></div>
+      <div class="clearfix"></div>
       <div class="product">
-        <h1 class="title product-header">Sản phẩm yêu thích</h1>
+        <h2 class="title product-header">Sản phẩm yêu thích</h2>
         <!-- Swiper -->
         <div class="swiper next-sp" id="product_swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide product-card">
               <div class="product-img">
-                <img src="/images/chair/sku1284/image54873.webp" alt="" />
+                <img class="img-responsive"src="/images/chair/sku1284/image54873.webp" alt="" />
               </div>
               <div class="product-name"> Ghế Ăn Chalk Grey </div>
               <div class="product-price">3.888.000VND</div>
             </div>
             <div class="swiper-slide product-card">
               <div class="product-img">
-                <img src="/images/table/sku45a/image43849.webp" alt="" />
+                <img class="img-responsive"src="/images/table/sku45a/image43849.webp" alt="" />
               </div>
               <div class="product-name"> Bàn Ăn Tròn Conan </div>
               <div class="product-price">16.077.000VND</div>
             </div>
             <div class="swiper-slide product-card">
               <div class="product-img">
-                <img src="/images/decor/sku16813/image71739.webp" alt="" />
+                <img class="img-responsive"src="/images/decor/sku16813/image71739.webp" alt="" />
               </div>
               <div class="product-name"> Đèn Trang Trí Kana </div>
               <div class="product-price">3.336.000VND</div>
@@ -104,17 +105,33 @@
         </div>
       </div>
       <div class="all-product">
-        <h2 class="title"> Tất cả sản phẩm</h2>
-        <ul class="shop-nav">
-          <li class="active" id="defaultFuniture">Sofa</li>
-          <li class="tablinks" onclick="openTabContent(event, 'London')">Ghế</li>
-          <li class="tablinks" onclick="openTabContent(event, 'London')">Bàn</li>
-          <li class="tablinks" onclick="openTabContent(event, 'London')">Giường</li>
-          <li class="tablinks" onclick="openTabContent(event, 'London')">Trang trí</li>
+        <h3 class="title"> Tất cả sản phẩm</h3>
+        <ul class="shop-nav nav nav-tabs" id="defaultFuniture">
+          <li role="presentation" class="active"><a href="#sofa" aria-controls="sofa" role="tab" data-toggle="tab">Sofa</a></li>
+          <li role="presentation"><a href="#chair" aria-controls="chair" role="tab" data-toggle="tab">Ghế</a></li>
+          <li role="presentation"><a href="#table" aria-controls="table" role="tab" data-toggle="tab">Bàn</a></li>
+          <li role="presentation"><a href="#bed" aria-controls="bed" role="tab" data-toggle="tab">Giường</a></li>
+          <li role="presentation"><a href="#interior" aria-controls="interior" role="tab" data-toggle="tab">Trang trí</a></li>
         </ul>
-        <div class="sp-img-truot">
-          <img src="/images/Sofa/sku1184/image46335.webp" alt="">
+		
+        <div class="tab-content">
+			<div role="tabpanel" class="tab-pane sp-img-truot active" id="sofa">
+			  <img class="img-responsive"src="/images/Sofa/sku1184/image46335.webp" alt="Sofa Content"/>
+			</div>
+			<div role="tabpanel" class="tab-pane sp-img-truot" id="chair">
+			  <img class="img-responsive"src="https://via.placeholder.com/1370x711?text=Ghế" alt="Ghế Content"/>
+			</div>
+			<div role="tabpanel" class="tab-pane sp-img-truot" id="table">
+			  <img class="img-responsive"src="https://via.placeholder.com/1370x711?text=Bàn" alt="Bàn Content"/>
+			</div>
+			<div role="tabpanel" class="tab-pane sp-img-truot" id="bed">
+			  <img class="img-responsive"src="https://via.placeholder.com/1370x711?text=Giường" alt="Giường Content"/>
+			</div>
+			<div role="tabpanel" class="tab-pane sp-img-truot" id="interior">
+			  <img class="img-responsive"src="https://via.placeholder.com/1370x711?text=Interior" alt="Trang trí Content"/>
+			</div>
         </div>
+		
       </div>
       <div class="all-product">
         <h3 class="title">Căn phòng lý tưởng</h3>
@@ -124,14 +141,14 @@
           <li>Phòng ngủ</li>
           <li>Phòng làm việc</li>
         </ul>
-        <div class="sp-img-truot">
-          <img src="/images/livingroom/787f77c0-0201-4933-bdfa-44fea3f8e7c0.jpg" alt="">
+        <div role="tabpanel" class="tab-pane sp-img-truot">
+          <img class="img-responsive"src="/images/livingroom/787f77c0-0201-4933-bdfa-44fea3f8e7c0.jpg" alt="">
         </div>
       </div>
       <div class="tus">
         <h3 class="title">Chúng tôi chuyên nghiệp</h3>
         <p> Với sự nhấn mạnh vào thiết kế cao cấp, vật liệu và kỹ thuật thủ công, đồ nội thất Nicolas thanh lịch, bền lâu và đặc biệt.</p>
-        <img class="img-size o-fit o-pos" src="/images/banner/image75952-1.jpg" alt="">
+        <img class="img-responsive"class="img-size o-fit o-pos" src="/images/banner/image75952-1.jpg" alt="">
       </div>
       <div class="tus-info">
         <h3 class="title-info">Sản phẩm mới - Gửi thẳng đến hộp thư của bạn.</h3>
@@ -153,7 +170,7 @@
         </div>
       </div>
     </div>
-    <div class="clear"></div>
+    <div class="clearfix"></div>
 	<footer>
 	  <div class="footer-info">
 		<h3 class="footer-menu">NICOLAS</h3>
@@ -166,6 +183,7 @@
 	  <div class="copyright"> Bản quyền © 2021 Nicolas Design. <br>Đã đăng ký bản quyền. </div>
 	</footer>
     <!-- Script -->
+    <script src="/js/myLibs.js"></script>
     <script src="/js/swiper-bundle.min.js"></script>
     <script src="/js/splide.min.js"></script>
     <script>
@@ -191,26 +209,14 @@
         },
       });
     </script>
-    <script>
-		function openTabContent(evt, tabName) {
-		  var i, tabcontent, tablinks;
-
-		  // Get all elements with class="tabcontent" and hide them
-		  tabcontent = document.getElementsByClassName("tabcontent");
-		  for (i = 0; i < tabcontent.length; i++) {
-			tabcontent[i].style.display = "none";
-		  }
-
-		  // Get all elements with class="tablinks" and remove the class "active"
-		  tablinks = document.getElementsByClassName("tablinks");
-		  for (i = 0; i < tablinks.length; i++) {
-			tablinks[i].className = tablinks[i].className.replace(" active", "");
-		  }
-
-		  // Show the current tab, and add an "active" class to the button that opened the tab
-		  document.getElementById(tabName).style.display = "block";
-		  evt.currentTarget.className += " active";
-		}
-    </script>
+	<script>
+		$('#defaultFuniture a').click(function (e) {
+			e.preventDefault()
+			$(this).tab('show')
+		})
+	</script>
+	<script>
+		$('#defaultFuniture a:first').tab('show')
+	</script>
   </body>
 </html>
