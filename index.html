@@ -107,11 +107,11 @@
       <div class="all-product">
         <h3 class="title"> Tất cả sản phẩm</h3>
         <ul class="shop-nav nav nav-tabs" id="defaultFuniture">
-          <li role="presentation" class="active"><a href="#sofa" aria-controls="sofa" role="tab" data-toggle="tab">Sofa</a></li>
-          <li role="presentation"><a href="#chair" aria-controls="chair" role="tab" data-toggle="tab">Ghế</a></li>
-          <li role="presentation"><a href="#table" aria-controls="table" role="tab" data-toggle="tab">Bàn</a></li>
-          <li role="presentation"><a href="#bed" aria-controls="bed" role="tab" data-toggle="tab">Giường</a></li>
-          <li role="presentation"><a href="#interior" aria-controls="interior" role="tab" data-toggle="tab">Trang trí</a></li>
+			<li role="presentation" class="active"><a href="#sofa" aria-controls="sofa" role="tab" data-toggle="tab">Sofa</a></li>
+			<li role="presentation"><a href="#chair" aria-controls="chair" role="tab" data-toggle="tab">Ghế</a></li>
+			<li class="hidden-xs" role="presentation"><a href="#table" aria-controls="table" role="tab" data-toggle="tab">Bàn</a></li>
+			<li class="hidden-xs" role="presentation"><a href="#bed" aria-controls="bed" role="tab" data-toggle="tab">Giường</a></li>
+			<li class="hidden-xs" role="presentation"><a href="#interior" aria-controls="interior" role="tab" data-toggle="tab">Trang trí</a></li>
         </ul>
 		
         <div class="tab-content">
@@ -135,14 +135,26 @@
       </div>
       <div class="all-product">
         <h3 class="title">Căn phòng lý tưởng</h3>
-        <ul class="shop-nav">
-          <li class="active" id="defaultProduct">Phòng khách</li>
-          <li>Phòng ăn</li>
-          <li>Phòng ngủ</li>
-          <li>Phòng làm việc</li>
+        <ul class="shop-nav nav nav-tabs" id="defaultProduct">
+          <li role="presentation" class="tab-pane sp-img-truot active"><a href="#guest" aria-controls="guest" role="tab" data-toggle="tab">Phòng khách</a></li>
+          <li role="presentation"><a href="#dinning" aria-controls="dinning" role="tab" data-toggle="tab">Phòng ăn</a></li>
+          <li class="hidden-xs" role="presentation"><a href="#bedroom" aria-controls="bedroom" role="tab" data-toggle="tab">Phòng ngủ</a></li>
+          <li class="hidden-xs" role="presentation"><a href="#working" aria-controls="working" role="tab" data-toggle="tab">Phòng làm việc</a></li>
         </ul>
-        <div role="tabpanel" class="tab-pane sp-img-truot">
-          <img class="img-responsive"src="/images/livingroom/787f77c0-0201-4933-bdfa-44fea3f8e7c0.jpg" alt="">
+		
+        <div class="tab-content">
+			<div role="tabpanel" class="tab-pane sp-img-truot active" id="guest">
+			  <img class="img-responsive"src="/images/livingroom/787f77c0-0201-4933-bdfa-44fea3f8e7c0.jpg" alt="Phòng khách"/>
+			</div>
+			<div role="tabpanel" class="tab-pane sp-img-truot" id="dinning">
+			  <img class="img-responsive"src="https://via.placeholder.com/1370x711?text=Dinning+Room" alt="Phòng ăn"/>
+			</div>
+			<div role="tabpanel" class="tab-pane sp-img-truot" id="bedroom">
+			  <img class="img-responsive"src="https://via.placeholder.com/1370x711?text=Beedroom" alt="Phòng ngủ"/>
+			</div>
+			<div role="tabpanel" class="tab-pane sp-img-truot" id="working">
+			  <img class="img-responsive"src="https://via.placeholder.com/1370x711?text=Working" alt="Phòng làm việc"/>
+			</div>
         </div>
       </div>
       <div class="tus">
@@ -217,6 +229,16 @@
 	</script>
 	<script>
 		$('#defaultFuniture a:first').tab('show')
+	</script>
+	
+	<script>
+		$('#defaultProduct a').click(function (e) {
+			e.preventDefault()
+			$(this).tab('show')
+		})
+	</script>
+	<script>
+		$('#defaultProduct a:first').tab('show')
 	</script>
   </body>
 </html>
