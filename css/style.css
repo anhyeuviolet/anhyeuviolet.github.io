@@ -449,8 +449,9 @@ button {
 	padding: 0px;
 	color:var(--color-primary);
 }
-.viewmore a{
-	font-size: 2rem;
+.viewmore a.viewmore-link{
+	font-size: 16px;
+	text-decoration:none;
 }
 .viewmore a span.viewmore-arrow{
 	line-height:1;
