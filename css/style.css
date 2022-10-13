@@ -449,8 +449,11 @@ button {
 	padding: 0px;
 	color:var(--color-primary);
 }
+.viewmore a{
+	font-size: 2rem;
+}
 .viewmore a span.viewmore-arrow{
-	line-height:2;
+	line-height:1;
 	font-size: 15px;
 }
 .nav-tabs > li > a:hover {
