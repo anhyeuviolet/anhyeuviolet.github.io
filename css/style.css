@@ -142,7 +142,7 @@
   font-size: 1.6rem;
   line-height: 140%;
   padding: 0 30px;
-  text-align: center;
+  text-align: justify;
   font-weight: 300;
 }
 
@@ -206,7 +206,7 @@ ul.shop-nav {
   height: 50px;
 }
 .shop-nav > li {
-  width: 120px;
+  width: 125px;
 }
 .swiper-button-next,
 .swiper-button-prev {
@@ -428,4 +428,12 @@ button {
 .nav > li > a {
 	padding: 0px;
 	color:var(--color-primary);
+}
+.viewmore a span.viewmore-arrow{
+	line-height:2;
+	font-size: 15px;
+}
+.nav-tabs > li > a:hover {
+    border-color: rgba(255,255,255,.5);
+	font-weight:500
 }
