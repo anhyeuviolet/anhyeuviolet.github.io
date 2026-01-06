@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nicolas</title>
+    <link rel="icon" type="image/icon" href="/icons/favicon.svg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="/css/styles-swiperjs.css"/>
+    <link rel="stylesheet" href="/css/splide.min.css"/>
+    <link rel="stylesheet" href="/css/style.core.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+  </head>
+  <body>
+	<div class="container">
+		<nav class="nav-bar">
+		  <a href="#" class="nav-toggle">
+			<div class="menubar" onclick="myFunction(this)">
+			  <div class="bar1"></div>
+			  <div class="bar2"></div>
+			  <div class="bar3"></div>
+			</div>
+			<div class="icon-logo">
+			  <a href="/">
+				<img class="img-responsive"src="/icons/logo.svg" alt="Nicolas"/>
+			  </a>
+			</div>
+		  </a>
+		  <!-- <div class="menu"><div class="sp">Sản phẩm
+				<ul><li>Sofa</li><li>Ghế</li><li>Bàn</li><li>Giường</li><li>Trang trí</li></ul></div><div class="room">Căn phòng lý tưởng
+				<ul><li>Phòng khách</li><li>Phòng ăn</li><li>Phòng ngủ</li><li>Phòng làm việc</li></ul></div></div> -->
+		  <div class="nav-right">
+			<div class="search-icon">
+			  <a href="#" class="search">
+				<span class="material-symbols-outlined">search</span>
+			  </a>
+			</div>
+			<div class="cart-icon">
+			  <a href="#" class="cart">
+				<span class="material-symbols-outlined">shopping_cart</span>
+				<span class="count-holder">
+				  <span class="count">0</span>
+				</span>
+			  </a>
+			</div>
+		  </div>
+		</nav>
+	</div>
+	
+    <div class="clearfix"></div>
+	<div class="container">
+		<div class="row">
+			<section class="splide" id="splide-banner" aria-label="Main products Banner">
+			  <div class="splide__track">
+				<ul class="splide__list">
+				  <li class="splide__slide b1">
+					<img class="img-responsive"src="/images/banner/main2.jpg" alt="Slide 01" />
+				  </li>
+				  <li class="splide__slide b2">
+					<img class="img-responsive"src="/images/banner/main1.jpg" alt="Slide 02" />
+				  </li>
+				  <li class="splide__slide b3">
+					<img class="img-responsive"src="/images/banner/main3.jpg" alt="Slide 03" />
+				  </li>
+				</ul>
+			  </div>
+			</section>
+		</div>
+	</div>
+    <div class="clearfix"></div>
+    <div class="container">
+		<div class="row">
+		  <div class="tus">
+			<h1 class="title">đứng đầu về chất lượng</h1>
+			<p> Là một xưởng nội thất cao cấp sản xuất những tác phẩm độc đáo cho nội thất và các nhà thiết kế trên toàn cầu.</p>
+		  </div>
+		<div class="container">
+			<div class="row">
+				<hr class="col-xs-24 hidden-xs hr-lg"></hr>
+			</div>
+		</div>
+		  <div class="product">
+			<h2 class="title product-header">Sản phẩm yêu thích</h2>
+			<!-- Swiper -->
+			<div class="swiper next-sp" id="product_swiper">
+			  <div class="swiper-wrapper">
+				<div class="swiper-slide product-card">
+				  <div class="product-img">
+					<img class="img-responsive"src="/images/chair/sku1284/image54873.webp" alt="" />
+				  </div>
+				  <div class="product-name"> Ghế Ăn Chalk Grey </div>
+				  <div class="product-price">3.888.000VND</div>
+				</div>
+				<div class="swiper-slide product-card">
+				  <div class="product-img">
+					<img class="img-responsive"src="/images/table/sku45a/image43849.webp" alt="" />
+				  </div>
+				  <div class="product-name"> Bàn Ăn Tròn Conan </div>
+				  <div class="product-price">16.077.000VND</div>
+				</div>
+				<div class="swiper-slide product-card">
+				  <div class="product-img">
+					<img class="img-responsive"src="/images/decor/sku16813/image71739.webp" alt="" />
+				  </div>
+				  <div class="product-name"> Đèn Trang Trí Kana </div>
+				  <div class="product-price">3.336.000VND</div>
+				</div>
+			  </div>
+			  <div class="swiper-button-next"></div>
+			  <div class="swiper-button-prev"></div>
+			</div>
+		  </div>
+		<div class="container">
+			<div class="row">
+				<hr class="col-xs-24 hidden-xs hr-lg"></hr>
+			</div>
+		</div>
+		  <div class="all-product">
+			<h3 class="title"> Tất cả sản phẩm</h3>
+			<ul class="shop-nav nav nav-tabs" id="defaultFuniture">
+				<li role="presentation" class="active"><a href="#sofa" aria-controls="sofa" role="tab" data-toggle="tab">Sofa</a></li>
+				<li role="presentation"><a href="#chair" aria-controls="chair" role="tab" data-toggle="tab">Ghế</a></li>
+				<li class="hidden-xs" role="presentation"><a href="#table" aria-controls="table" role="tab" data-toggle="tab">Bàn</a></li>
+				<li class="hidden-xs" role="presentation"><a href="#bed" aria-controls="bed" role="tab" data-toggle="tab">Giường</a></li>
+				<li class="hidden-xs" role="presentation"><a href="#interior" aria-controls="interior" role="tab" data-toggle="tab">Trang trí</a></li>
+			</ul>
+			
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane sp-img-truot active" id="sofa">
+				  <img class="img-responsive"src="/images/Sofa/sku1184/image46335.webp" alt="Sofa Content"/>
+				</div>
+				<div role="tabpanel" class="tab-pane sp-img-truot" id="chair">
+				  <img class="img-responsive"src="/images/banner/25bbc8e6-2f17-4a02-ab99-e26573b53ff9.jpg" alt="Ghế Content"/>
+				</div>
+				<div role="tabpanel" class="tab-pane sp-img-truot" id="table">
+				  <img class="img-responsive"src="/images/table/sku45a/image43848.webp" alt="Bàn Content"/>
+				</div>
+				<div role="tabpanel" class="tab-pane sp-img-truot" id="bed">
+				  <img class="img-responsive"src="/images/bed/sku11573/image79244.webp" alt="Giường Content"/>
+				</div>
+				<div role="tabpanel" class="tab-pane sp-img-truot" id="interior">
+				  <img class="img-responsive"src="/images/decor/sku1697/image70143.webp" alt="Trang trí Content"/>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="viewmore col-sm-offset-16 col-sm-6 col-xs-offset-16 col-xs-6">
+						<a href="#" class="viewmore-link">
+							XEM THÊM
+							<span class="material-symbols-outlined viewmore-arrow">
+								arrow_right_alt
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		  </div>
+		<div class="container">
+			<div class="row">
+				<hr class="col-xs-24 hidden-xs hr-lg"></hr>
+			</div>
+		</div>
+		  <div class="all-product">
+			<h3 class="title">Căn phòng lý tưởng</h3>
+			<div class="hidden-xs col-sm-offset-2 col-sm-20 container">
+				<div class="row equal">
+					<div class="col-sm-12 tablet_img">
+						<a href="#">
+							<div class="fix">
+								<img class="img-responsive"src="/images/banner/living-room-1019.jpg" alt="Phòng khách"/>
+								<div class="desc">
+									<p class="desc_content">Phòng khách</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-sm-12 tablet_img">
+						<a href="#">
+							<div class="fix">
+								<img class="img-responsive"src="/images/banner/b3a4c59328b5bfa57bcd.webp" alt="Phòng ăn"/>
+								<div class="desc">
+									<p class="desc_content">Phòng ăn</p>
+								</div>
+							</div>
+						</a>
+					</div>
+				
+					<div class="col-sm-12 tablet_img">
+						<a href="#">
+						<div class="fix">
+							<img class="img-responsive"src="/images/banner/bedroom-1019.jpg" alt="Phòng ngủ"/>
+							<div class="desc">
+								<p class="desc_content">Phòng ngủ</p>
+							</div>
+							</div>
+						</a>
+					</div>
+				
+					<div class="col-sm-12 tablet_img">
+						<a href="#">
+						<div class="fix">
+							<img class="img-responsive"src="/images/banner/634a702d68dcf44dd5fb.webp" alt="Phòng làm việc"/>
+							<div class="desc">
+								<p class="desc_content">Phòng làm việc</p>
+							</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="hidden-lg hidden-md hidden-sm">
+				<ul class="shop-nav nav nav-tabs" id="defaultProduct">
+				  <li role="presentation" class="tab-pane sp-img-truot active"><a href="#guest" aria-controls="guest" role="tab" data-toggle="tab">Phòng khách</a></li>
+				  <li role="presentation"><a href="#dinning" aria-controls="dinning" role="tab" data-toggle="tab">Phòng ăn</a></li>
+				  <li class="hidden-xs" role="presentation"><a href="#bedroom" aria-controls="bedroom" role="tab" data-toggle="tab">Phòng ngủ</a></li>
+				  <li class="hidden-xs" role="presentation"><a href="#working" aria-controls="working" role="tab" data-toggle="tab">Phòng làm việc</a></li>
+				</ul>
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane sp-img-truot active" id="guest">
+					  <img class="img-responsive"src="/images/livingroom/787f77c0-0201-4933-bdfa-44fea3f8e7c0.jpg" alt="Phòng khách"/>
+					</div>
+					<div role="tabpanel" class="tab-pane sp-img-truot" id="dinning">
+					  <img class="img-responsive"src="/images/banner/image75952.jpg" alt="Phòng ăn"/>
+					</div>
+					<div role="tabpanel" class="tab-pane sp-img-truot" id="bedroom">
+					  <img class="img-responsive"src="/images/banner/Screen-Shot-2022-02-18-at-8.16.25-PM-2116x1158.png" alt="Phòng ngủ"/>
+					</div>
+					<div role="tabpanel" class="tab-pane sp-img-truot" id="working">
+					  <img class="img-responsive"src="/images/banner/image76859.webp" alt="Phòng làm việc"/>
+					</div>
+				</div>
+			</div>
+			
+		  </div>
+		  <div class="container">
+			  <div class="row">
+				  <div class="tus col-xs-24">
+					<h3 class="title">Chúng tôi chuyên nghiệp</h3>
+					<p> Với sự nhấn mạnh vào thiết kế cao cấp, vật liệu và kỹ thuật thủ công, đồ nội thất Nicolas thanh lịch, bền lâu và đặc biệt.</p>
+				  </div>
+			  </div>
+		  </div>
+		  <div class="equal pro_tus">
+			  <div class="pro_image col-xs-24 col-sm-12">
+				<img class="img-responsive"class="img-size o-fit o-pos" src="/images/banner/image75952-1.jpg" alt="NICOLAS rất là chuyên nghiệp"/>
+			  </div>
+			  
+			  <div class="pro_tips col-xs-24 col-sm-12">
+				  <div class="tus-info">
+					<h3 class="title-info">Sản phẩm mới - Gửi thẳng đến hộp thư của bạn.</h3>
+					<p>Mời bạn đăng nhập ngay để tận hưởng ưu đãi nhé.</p>
+					<form class="e-info">
+					  <input type="email" placeholder="Nhập mail của bạn">
+					  <button type="submit">Theo dõi</button>
+					</form>
+					<div class="icon-socical">
+					  <a href="">
+						<i class="fab fa-facebook"></i>
+					  </a>
+					  <a href="">
+						<i class="fab fa-instagram"></i>
+					  </a>
+					  <a href="">
+						<i class="fab fa-twitter"></i>
+					  </a>
+					</div>
+				  </div>
+			  </div>
+		  </div>
+		</div>
+    </div>
+	<div class="container">
+		<div class="row">
+			<hr class="col-xs-24 hr"></hr>
+		</div>
+	</div>
+	
+    <div class="clearfix"></div>
+	<footer>
+	  <div class="container">
+		  <div class="row">
+			  <div class="footer-info">
+				<h3 class="footer-menu">NICOLAS</h3>
+				<!-- <div class="about">Sản phẩm
+					<ul><li>Về chúng tôi</li><li>Blog</li></ul></div> -->
+				<h3 class="footer-menu">HỖ TRỢ KHÁCH HÀNG</h3>
+				<!-- <div class="help">Hỗ trợ khách hàng
+					<ul><li>Chính sách giao hàng</li><li>Chính sách bảo hành</li><li>Phương thức thanh toán</li><li>Chính sách trả hàng</li></ul></div> -->
+			  </div>
+		  </div>
+	  </div>
+	  <div class="copyright"> Bản quyền © 2021 Nicolas Design. <br>Đã đăng ký bản quyền. </div>
+	</footer>
+    <!-- Script -->
+    <script src="/js/myLibs.js"></script>
+    <script src="/js/swiper-bundle.min.js"></script>
+    <script src="/js/splide.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var splide = new Splide('.splide', {
+          type: 'loop',
+          arrows: false,
+          perPage: 1,
+        });
+        splide.mount();
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".next-sp", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        slidesPerGroup: 2,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+	<script>
+		$('#defaultFuniture a').click(function (e) {
+			e.preventDefault()
+			$(this).tab('show')
+		})
+	</script>
+	<script>
+		$('#defaultFuniture a:first').tab('show')
+	</script>
+	
+	<script>
+		$('#defaultProduct a').click(function (e) {
+			e.preventDefault()
+			$(this).tab('show')
+		})
+	</script>
+	<script>
+		$('#defaultProduct a:first').tab('show')
+	</script>
+  </body>
+</html>
